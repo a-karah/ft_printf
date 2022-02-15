@@ -6,7 +6,7 @@
 /*   By: akarahan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 13:38:29 by akarahan          #+#    #+#             */
-/*   Updated: 2022/01/29 13:41:11 by akarahan         ###   ########.fr       */
+/*   Updated: 2022/02/15 14:07:02 by akarahan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,11 +86,9 @@ static void	put_ptr(t_printf *tab, uintptr_t nbr)
 
 void	print_ptr(t_printf *tab)
 {
-	uintptr_t	pow;
 	uintptr_t	nbr;
 	int			n_len;
 
-	pow = 1;
 	nbr = (uintptr_t)va_arg(tab->args, void *);
 	if (!nbr)
 	{
